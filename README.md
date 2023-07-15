@@ -2,4 +2,7 @@
 
 Baic Network Scan in Nessus
 <br>
-![1](https://github.com/RElGN222/SOAR-SIEM-Tools/assets/139646653/9063e186-a1b1-41d0-aca8-58df39533356) width="200" height="400" />
+![img|200x200](https://gyazo.com/4b83897d3fa9437e260b787ed7d24a15)
+
+
+

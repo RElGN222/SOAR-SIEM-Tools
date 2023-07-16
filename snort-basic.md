@@ -1,3 +1,4 @@
+<img src="https://i.gyazo.com/ea8218ce8d986ee5293cc13971912e91.png" width="600"> <br>
 # Snort Basic setup
 
 When initiating Snort for the first time, it is essential to validate the configuration file. The '-t' flag is utilized to test the configuration's validity, while the '-c' flag creates a new configuration file.

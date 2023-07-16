@@ -26,10 +26,11 @@ Opening a new terminal, I switched to the logs directory using cd /var/logs/snor
 Returning to the rules, I modified them to use "reject" instead of "alert." In the local.rules file, I replaced the rule with: reject tcp (suspicious ip) any <> any any (msg: "reject suspicious ip"; sid: 1000002; rev: 1;). After saving the changes, I executed the rule using sudo snort -c /etc/snort/rules/local.rules. It should take effect within a minute.
 
 
-# Task 3 Scenario 2 | Reverse-Shell
+# Scenario 2 | Reverse-Shell
 
 In this scenario, I followed the same initial steps as in the previous scenario. I ran Snort with the -X option to view the payload. I noticed a suspicious payload containing our username and IP address. Additionally, it was heading towards port 4444, which is commonly associated with rootkits for backdoor access—raising concerns.
-<img src="https://i.gyazo.com/ea8218ce8d986ee5293cc13971912e91.png" width="400">
+
+<img src="https://i.gyazo.com/dfd07f7f012a5d3106f88558996b7358.png" width="200">
 
 
 Navigating to the rules folder using cd /etc/snort/rules, I created a local.rules file using nano local.rules and added two rules:

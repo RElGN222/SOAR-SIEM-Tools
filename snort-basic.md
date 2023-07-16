@@ -1,14 +1,13 @@
 # Snort Basic setup
 
-when starting up snort for the first time, we should ensure the configuration file is valid.
+When initiating Snort for the first time, it is essential to validate the configuration file. The '-t' flag is utilized to test the configuration's validity, while the '-c' flag creates a new configuration file.
 -t is used to test configuration, and -c makes a new configuration file
 
 <img src="https://i.gyazo.com/829b48746afe86d8cc03922fa279bfa4.png" width="400">
 
 # Sniffer mode
 
-Like tcpdump, Snort has various flags capable of viewing various data about the packet it is ingesting.
-<br> Sniffer mode parameters are explained in the table below;
+Similar to tcpdump, Snort offers a range of flags that allow users to examine diverse packet data as it gets ingested. The table below provides an explanation of the sniffer mode parameters
 
 <img src="https://i.gyazo.com/d92eebc302b044e4f16d940d2c89b7f0.png" width="500">
 
@@ -34,12 +33,10 @@ Start the Snort instance in full packet dump mode (-X); sudo snort -X
 
 
 # Running Snort in Logger Mode
-You can use Snort as a sniffer and log the sniffed packets via logger mode. You only need to use the packet logger mode parameters, and Snort does the rest to accomplish this.
-
+"Snort can be utilized as a sniffer, enabling the logging of captured packets through the logger mode. By simply employing the packet logger mode parameters, Snort takes care of the necessary steps to accomplish this seamlessly.
 <img src="https://i.gyazo.com/d9a4c2d3a3a855f5a1d70d17a2558496.png" width="500">
 
-Logfile Ownership  Remember, whoever creates a file becomes the owner of said file, to use snort you must escalate privileges using "sudo" <br>
-You can also elevate the session privileges and switch to the superuser account to examine the generated log files by using the command "sudo su"
+It's crucial to keep in mind that the owner of a file is determined by the user who creates it. To utilize Snort, it is necessary to elevate privileges using 'sudo' in order to access the required resources. Alternatively, you can elevate session privileges and switch to the superuser account using the command 'sudo su' to examine the generated log files.
 
 # Logging with parameter “-l”
 
@@ -53,8 +50,7 @@ Start the Snort instance in packet logger mode; sudo snort -dev -K ASCII
 
 Start the Snort instance in packet reader mode; sudo snort -r
 
-“-r” parameter also allows users to filter the binary log files. You can filter the processed log to see specific packets with the “-r” parameter and Berkeley Packet Filters (BPF).
-
+The '-r' parameter additionally enables users to apply filters on the binary log files. By combining the '-r' parameter with Berkeley Packet Filters (BPF), it becomes possible to narrow down the processed log and focus on specific packets of interest."
 
 
 
